@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `My Awesome Blog`,
+    description: `An awesome blog displaying my awesome posts.`,
+    author: `Cristian Torres`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `irkqtobmycy5`,
+        accessToken: `WrgK7jTb0SwfWcAlFJ1DX_TSNOlTgDPmOAtX1YtPaoI`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
